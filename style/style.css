@@ -14,10 +14,10 @@ body {
 }
 
 nav {
-  width: 100%;
   height: 60px;
-  left: 72px;
   background-color: transparent;
+  margin-left: 60px;
+  margin-top: 20px;
 }
 a.navbar-brand {
   color: #637565;
@@ -104,4 +104,12 @@ div#socialMedia {
   height: 60px;
   width: 60px;
   margin-right: 20px;
+}
+
+img#myProfile {
+  position: fixed;
+  width: 50%;
+  height: 100%;
+  left: 50%;
+  top: 0px;
 }
