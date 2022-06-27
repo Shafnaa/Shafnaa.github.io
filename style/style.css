@@ -198,7 +198,7 @@ img#background {
   img#myProfile {
     position: fixed;
     width: auto;
-    height: 480px;
+    height: 50%;
     left: 0px;
     top: 50%;
   }
@@ -207,7 +207,7 @@ img#background {
   }
   .svg {
     display: block;
-    top: 50%;
+    margin-top: 87%;
     width: 100%;
   }
 }
