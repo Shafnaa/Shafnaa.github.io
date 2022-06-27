@@ -113,3 +113,11 @@ img#myProfile {
   left: 50%;
   top: 0px;
 }
+
+img#background {
+  position: fixed;
+  width: auto;
+  height: 100%;
+  left: 10%;
+  top: 0px;
+}
