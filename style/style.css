@@ -145,7 +145,7 @@ img#background {
   nav {
     height: 28px;
     margin-top: 5%;
-    margin-left: 3%;
+    margin-left: 0;
   }
   a.navbar-brand {
     font-size: 24px;
