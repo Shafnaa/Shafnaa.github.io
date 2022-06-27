@@ -125,7 +125,7 @@ img#background {
   top: 0px;
 }
 .svg {
-  display: block;
+  display: none;
 }
 
 @media screen and (max-width: 800px) {
