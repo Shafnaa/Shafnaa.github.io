@@ -40,29 +40,18 @@ a.navbar-brand {
   width: 400px;
   justify-content: end;
 }
-
-h1#saujana {
+.container-main {
   position: fixed;
-  width: 822.36px;
-  height: 183.01px;
-  left: 72px;
-  top: 235.12px;
-
-  font-family: "Skrapbook";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 154px;
-  line-height: 158px;
-
-  color: #637565;
+  margin-top: 196px;
+  margin-left: 72px;
+  width: 1000px;
+  height: 600px;
 }
 
 h2#webDev {
-  position: fixed;
+  position: relative;
   width: 229.72px;
   height: 46.1px;
-  left: 72px;
-  top: 196px;
 
   font-family: "Skrapbook";
   font-style: normal;
@@ -73,12 +62,25 @@ h2#webDev {
   color: #637565;
 }
 
+h1#saujana {
+  position: relative;
+  width: 822.36px;
+  height: 183.01px;
+
+  font-family: "Skrapbook";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 154px;
+  line-height: 158px;
+
+  color: #637565;
+}
+
 p#about {
-  position: fixed;
+  position: relative;
   width: 780px;
   height: 81.03px;
-  left: 72px;
-  top: 494.97px;
+  margin-top: 120px;
 
   font-family: "Skrapbook";
   font-style: normal;
@@ -91,15 +93,10 @@ p#about {
   color: #637565;
 }
 
-div#moreAbout {
-  position: fixed;
-  width: 394px;
-  height: 25px;
-  left: 72px;
-  top: 681px;
-}
-
 a#more {
+  position: relative;
+  display: flex;
+  bottom: 240px;
   font-size: 24px;
   text-decoration: none;
   color: #637565;
@@ -112,14 +109,11 @@ h5 {
 div#socialMedia {
   position: fixed;
   display: flex;
-  justify-content: center;
-  flex: end;
   width: 600px;
   height: 60px;
-  /* left: 72px; */
-  bottom: 0;
+  left: 72px;
+  bottom: 28px;
   margin-bottom: 20px;
-  /* top: 856px; */
 }
 
 .socMed {
@@ -154,19 +148,24 @@ img#background {
   left: 10%;
   top: 0px;
 }
+.mobile-svg-home {
+  display: none;
+  position: fixed;
+  left: 0;
+}
 
-.svg {
+/* .svg {
   display: none;
 }
 
 .bg-wrapper {
   display: none;
-}
+} */
 
 @media screen and (max-width: 800px) {
   .container-fluid {
     height: 25px;
-    margin-top: 5%;
+    margin-top: 0;
     margin-left: 0;
     margin-right: 0;
   }
@@ -180,60 +179,80 @@ img#background {
   #navbarNav {
     background-color: #c0d4df;
   }
-
-  h1#saujana {
+  .navbar {
     position: fixed;
-    width: 334px;
-    height: 65px;
-    left: 3%;
-    top: 127px;
-
-    font-family: "Skrapbook";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 65px;
   }
-  h2#webDev {
+  .container-main {
     position: fixed;
+    margin-top: 80px;
+    margin-left: 12px;
+    width: 100%;
+    height: auto;
+  }
+
+  h2#webDev {
+    position: relative;
     width: 94px;
     height: 16px;
-    left: 3%;
-    top: 111px;
 
     font-family: "Skrapbook";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 16px;
+
+    color: #637565;
   }
+
+  h1#saujana {
+    position: relative;
+    width: 334px;
+    height: 65px;
+
+    font-family: "Skrapbook";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 65px;
+
+    color: #637565;
+  }
+
   p#about {
-    position: fixed;
+    position: relative;
     width: 346px;
     height: 71px;
-    left: 3%;
-    top: 229px;
+    margin-top: 32px;
 
     font-family: "Skrapbook";
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 12px;
+
+    color: #637565;
   }
-  div#moreAbout {
-    position: fixed;
-    width: 394px;
-    height: 25px;
-    left: 3%;
-    top: 308px;
+
+  a#more {
+    position: relative;
+    top: 0;
+    font-size: 24px;
+    text-decoration: none;
+    color: #637565;
   }
   div#socialMedia {
     position: fixed;
+    display: flex;
+    width: 600px;
+    height: 60px;
+    left: 12px;
+    bottom: 0px;
+    /* position: fixed;
     width: 100%;
     height: 97px;
     left: 3%;
     bottom: 0;
-    margin-bottom: 0;
+    margin-bottom: 0; */
   }
   .socMed {
     height: 48px;
@@ -248,11 +267,15 @@ img#background {
     bottom: 0;
     left: 0px;
     display: flex;
+    z-index: -1;
   }
   .bg {
     display: none;
   }
-  .svg {
+  .mobile-svg-home {
+    display: block;
+  }
+  /* .svg {
     display: block;
     width: 100%;
     top: 500px;
@@ -263,5 +286,5 @@ img#background {
     width: 100%;
     height: 50%;
     padding-top: 30%;
-  }
+  } */
 }

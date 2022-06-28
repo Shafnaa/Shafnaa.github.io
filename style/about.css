@@ -1,0 +1,65 @@
+section.container {
+  position: fixed;
+  min-width: 2560px;
+  height: 100%;
+  background-color: #637565;
+}
+.desktop-svg {
+  position: fixed;
+  justify-content: end;
+  z-index: -1;
+}
+.div-wrapperr {
+  position: fixed;
+  justify-content: end;
+  z-index: -10;
+  right: 0;
+}
+.container-about {
+  position: fixed;
+  width: 1000px;
+  height: auto;
+  margin-top: 120px;
+  margin-left: 48px;
+  z-index: 10;
+}
+h2.about-me {
+  font-size: 72px;
+  color: #ffffff;
+}
+p.text-about {
+  font-size: 28px;
+  color: #ffffff;
+}
+.prog-logo {
+  position: fixed;
+  height: 128px;
+}
+.arduino {
+  top: 160px;
+  right: 580px;
+}
+.html {
+  top: 200px;
+  right: 320px;
+}
+.css {
+  top: 260px;
+  right: 80px;
+}
+.python {
+  top: 360px;
+  right: 500px;
+}
+.c {
+  top: 450px;
+  right: 240px;
+}
+.js {
+  top: 580px;
+  right: 440px;
+}
+.cpp {
+  top: 680px;
+  right: 190px;
+}
